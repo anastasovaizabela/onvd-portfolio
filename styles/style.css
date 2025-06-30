@@ -1,0 +1,140 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/**{*/
+/*  margin: 0;*/
+/*}*/
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #333;
+}
+
+header {
+  background: #a181ff;;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+nav a{
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover{
+  color: black;
+}
+
+p{
+  font-size: 16px;
+}
+
+li{
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+h2{
+  padding: 2px;
+}
+
+section {
+  margin: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #636161;
+  color: white;
+}
+
+button{
+  background: #a181ff;
+  color: white;
+  border: 1px solid #a181ff;
+  padding: 10px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*a.hover{*/
+/*  background: #461cc3;*/
+/*}*/
+
+.patuvanja{
+  list-style: none;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.unlist{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.patuvanja a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.patuvanja a:hover {
+  color: #a181ff;
+}
+
+label{
+  font-size: 18px;
+  margin-right: 30px;
+}
+
+input, textarea{
+  border: 1.5px solid #a181ff;
+  border-radius: 3px;
+  padding: 8px;
+}
+
+textarea{
+  width: 50%;
+  height: 150px;
+  border: 2px solid #a181ff;
+}
+
+#contact div {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#bio {
+  display: flex;
+}
+
+#bio div {
+  width: 100%;
+}
+
+#bio img {
+  width: 40%;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
