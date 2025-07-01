@@ -3,8 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Моја веб страна</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Изабела Анастасова - Веб развивач и дизајнер | Портфолио" />
+  <meta name="keywords" content="web development, portfolio, FINKI, design" />
+  <title>Изабела Анастасова | Портфолио</title>
   <link rel="stylesheet" href="styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <script src="scripts/main.js" defer></script>
 </head>
 
 <body>
@@ -12,108 +17,270 @@
     <h1>Изабела Анастасова</h1>
     <nav>
       <a href="#bio">Биографија</a>
-      <a href="#education">Образование</a>
-      <a href="#skills">Вештини</a>
-      <a href="#patuvanje">Патувања</a>
       <a href="#hobi">Хоби</a>
+      <a href="#projects">Проекти</a>
+      <a href="#patuvanje">Патувања</a>
       <a href="#contact">Контакт</a>
     </nav>
   </header>
-
   <main>
-    <section id="bio">
+    <div id="bio" class="fade-in">
       <div>
         <h2>Биографија</h2>
         <p>
-          Јас сум студентка на ФИНКИ, заинтересирана за веб технологија и
-          дизајн.
+          Здраво! Јас сум Изабела — студентка на ФИНКИ, посветена на
+          веб развојот и front-end технологиите. Имам голема страст за дизајн и естетика,
+          и секогаш се трудам да ги поврзам технологијата и креативноста на начин што
+          носи свежина и уникатност во дигиталниот свет. Мојата цел е да создавам
+          кориснички искуства што се и функционални и визуелно впечатливи.
         </p>
-      </div>
-
-      <img src="assets/images/avatar.png" alt="Avatar" />
-    </section>
-
-    <section id="education">
-      <h2>Образование</h2>
-      <ul>
-        <li>Средно училиште: Гимназија „Никола Карев“</li>
-        <li>ФИНКИ, УКИМ – Програмерско инженерство</li>
-      </ul>
-    </section>
-
-    <section id="skills">
-      <h2>Вештини</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Git и GitHub</li>
-        <li>Дизајн со Figma</li>
-      </ul>
-    </section>
-
-    <section id="hobi">
-      <h2>Хоби</h2>
-      <ul>
-        <li>Читање книга</li>
-        <li>Гледање филмови и серии</li>
-        <li>Слушање музика</li>
-        <li>Квилинг</li>
-      </ul>
-    </section>
-
-    <section id="patuvanje">
-      <h2>Патувања</h2>
-      <ul class="unlist">
-        <li class="patuvanja">
-          <a href="https://www.google.com/search?q=грција" target="_blank">Грција</a>
-          <img src="assets/flags/greece.png" height="100" width="150" />
-        </li>
-
-        <li class="patuvanja">
-          <a href="https://www.google.com/search?q=италија" target="_blank">Италија</a>
-          <img src="assets/flags/italy.png" height="100" width="150" />
-        </li>
-
-        <li class="patuvanja">
-          <a href="https://www.google.com/search?q=малта" target="_blank">Малта</a>
-          <img src="assets/flags/malta.png" height="100" width="150" />
-        </li>
-
-        <li class="patuvanja">
-          <a href="https://www.google.com/search?q=словенија" target="_blank">Словенија</a>
-          <img src="assets/flags/slovenia.png" height="100" width="150" />
-        </li>
-
-        <li class="patuvanja">
-          <a href="https://www.google.com/search?q=австрија" target="_blank">Австрија</a>
-          <img src="assets/flags/austria.png" height="100" width="150" />
-        </li>
-
-        <li class="patuvanja">
-          <a href="https://www.google.com/search?q=германија" target="_blank">Германија</a>
-          <img src="assets/flags/germany.png" height="100" width="150" />
-        </li>
-
-        <li class="patuvanja">
-          <a href="https://www.google.com/search?q=албанија" target="_blank">Албанија</a>
-          <img src="assets/flags/albania.png" height="100" width="150" />
-        </li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Контакт</h2>
-      <form>
-        <div>
-          <label>Име: <input type="text" name="name" /></label><br />
-
-          <label>Е-пошта: <input type="email" name="email" /></label><br />
+        <div class="social-links">
+          <a href="https://github.com/anastasovaizabela" target="_blank"><i class="fab fa-github"></i></a>
         </div>
-        <textarea placeholder="Порака..."></textarea><br /><br />
+      </div>
+      <img src="assets/images/avatar.png" alt="Avatar" />
+    </div>
+    <div class="info-cards">
+      <div class="info-card">
+        <h2>Образование</h2>
+        <ul>
+          <li>
+            <b>ФИНКИ, УКИМ</b> - Примена на информациски технологии (2024- )
+          </li>
+          <li>Гимназија „Никола Карев“ - Општествена насока</li>
+          <li>Семос курс по основен и напреден C++</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h2>Вештини</h2>
+        <ul class="skills-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript (почетно)</li>
+          <li>Git & GitHub</li>
+          <li>Figma / UI Design</li>
+          <li>Teamwork</li>
+        </ul>
+      </div>
+      <div id="hobi" class="info-card hobbies-card">
+        <h2><i class="fas fa-heart"></i> Хоби</h2>
+        <div class="hobbies-grid">
+          <div class="hobby-item" data-hobby="reading">
+            <div class="hobby-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h3>Читање</h3>
+            <p>Социјална критика, Политичка филозофија и алегорија, Психологија</p>
+          </div>
+          <div class="hobby-item" data-hobby="movies">
+            <div class="hobby-icon">
+              <i class="fas fa-film"></i>
+            </div>
+            <h3>Филмови</h3>
+            <p>Акција, Комедија, Историја, и анимирани филмови</p>
+          </div>
+          <div class="hobby-item" data-hobby="music">
+            <div class="hobby-icon">
+              <i class="fas fa-music"></i>
+            </div>
+            <h3>Музика</h3>
+            <p>Ex-ju</p>
+            <p>Поп</p>
+            <p>Латино</p>
+          </div>
+          <div class="hobby-item" data-hobby="art">
+            <div class="hobby-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3>Квилинг</h3>
+            <p>Уметност од хартија и креативен дизајн</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 32px"></div>
+    <div id="projects" class="projects-section">
+      <h2 class="section-title"><i class="fas fa-code"></i> Проекти</h2>
+      <div class="projects-container">
+        <div class="project-card featured">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="project-status">Активен</div>
+          </div>
+          <div class="project-content">
+            <h3>Портфолио Веб Страна</h3>
+            <p>
+              Модерен и респонзивен дизајн со HTML, CSS и JavaScript. Вклучува
+              интерактивни елементи, анимации и персонализиран UI инспириран
+              од аниме стилот на аватарот.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag html">HTML5</span>
+              <span class="tech-tag css">CSS3</span>
+              <span class="tech-tag js">JavaScript</span>
+              <span class="tech-tag design">UI/UX</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/anastasovaizabela/onvd-portfolio" class="project-link github" target="_blank">
+              <i class="fab fa-github"></i> Код
+            </a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="project-status">Во развој</div>
+          </div>
+          <div class="project-content">
+            <h3>Е-учење Платформа</h3>
+            <p>
+              Full-stack апликација со React и Node.js за онлајн курсеви, со
+              user authentication, прогрес барови и динамички UI.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag react">React</span>
+              <span class="tech-tag node">Node.js</span>
+              <span class="tech-tag mongo">MongoDB</span>
+              <span class="tech-tag api">REST API</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span class="coming-soon">Наскоро...</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="project-status">Планирано</div>
+          </div>
+          <div class="project-content">
+            <h3>Мобилна Апликација</h3>
+            <p>
+              Flutter апликација за следење на навики и продуктивност, со
+              модерен UI и локално складирање податоци.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag react">Flutter</span>
+              <span class="tech-tag js">Dart</span>
+              <span class="tech-tag design">UI/UX</span>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span class="coming-soon">Наскоро...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 32px"></div>
+    <div id="patuvanje" class="travels-section">
+      <h2 class="section-title">
+        <i class="fas fa-globe-europe"></i> Патувања
+      </h2>
+      <div class="travel-world-map">
+        <div class="travel-stats">
+          <div class="stat-item">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Земји</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">15+</span>
+            <span class="stat-label">Градови</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">Спомени</span>
+          </div>
+        </div>
+        <div class="countries-grid">
+          <div class="country-card visited" data-country="malta">
+            <div class="country-flag">
+              <img src="assets/flags/malta.png" alt="Малта" />
+            </div>
+            <div class="country-info">
+              <h4>Малта</h4>
+              <p>Средоземско богатство</p>
+              <span class="visit-year">2025</span>
+            </div>
+          </div>
+
+          <div class="country-card visited" data-country="italy">
+            <div class="country-flag">
+              <img src="assets/flags/italy.png" alt="Италија" />
+            </div>
+            <div class="country-info">
+              <h4>Италија</h4>
+              <span class="visit-year">2024</span>
+            </div>
+          </div>
+
+          <div class="country-card visited" data-country="slovenia">
+            <div class="country-flag">
+              <img src="assets/flags/slovenia.png" alt="Словенија" />
+            </div>
+            <div class="country-info">
+              <h4>Словенија</h4>
+              <span class="visit-year">2024</span>
+            </div>
+          </div>
+
+          <div class="country-card visited" data-country="austria">
+            <div class="country-flag">
+              <img src="assets/flags/austria.png" alt="Австрија" />
+            </div>
+            <div class="country-info">
+              <h4>Австрија</h4>
+              <span class="visit-year">2023</span>
+            </div>
+          </div>
+
+          <div class="country-card visited" data-country="germany">
+            <div class="country-flag">
+              <img src="assets/flags/germany.png" alt="Германија" />
+            </div>
+            <div class="country-info">
+              <h4>Германија</h4>
+              <span class="visit-year">2023</span>
+            </div>
+          </div>
+
+          <div class="country-card visited" data-country="greece">
+            <div class="country-flag">
+              <img src="assets/flags/greece.png" alt="Грција" />
+            </div>
+            <div class="country-info">
+              <h4>Грција</h4>
+              <span class="visit-year">секоја година</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 32px"></div>
+    <div id="contact" class="fade-in">
+      <h2>Контакт</h2>
+      <form action="mailto:izabela@example.com" method="post" enctype="text/plain">
+        <label>Име
+          <input type="text" name="name" required />
+        </label>
+        <label>Е-пошта
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <textarea name="message" placeholder="Порака..." required></textarea>
+        </label>
         <button type="submit">Испрати</button>
       </form>
-    </section>
+    </div>
   </main>
-
   <footer>
     <p>&copy; 2025 Изабела Анастасова</p>
   </footer>
